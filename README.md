@@ -6,7 +6,7 @@ You may visit [here](https://github.com/xliucs/MTTS-CAN) to checkout our python 
 
 ## Demo
 
-**Try out our live demo via link [here](https://vitals.cs.washington.edu/).**
+**Try out our live demo via link [here](http://164.125.19.25:8022/).**
 
 Instructions:
 1. Please allow the camera access
