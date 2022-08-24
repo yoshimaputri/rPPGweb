@@ -45,8 +45,8 @@ const Home = () => {
     labels: [],
     rppg: []
   });
-  const refCountDown = React.useRef(10);
-  const [countDown, setCountDown] = useState(10);
+  const refCountDown = React.useRef(30);
+  const [countDown, setCountDown] = useState(30);
 
   useEffect(
     () => () => {
@@ -72,7 +72,7 @@ const Home = () => {
 
   const startRecording = async () => {
     await postprocessor.loadModel();
-    intervalId.current = setInterval(capture, 10);
+    intervalId.current = setInterval(capture, 30);
     coutdownIntervalId.current = setInterval(() => {
       setCountDown(prevCount => prevCount - 1);
       refCountDown.current -= 1;
@@ -94,8 +94,8 @@ const Home = () => {
     }
     preprocessor.stopProcess();
     tensorStore.reset();
-    setCountDown(10);
-    refCountDown.current = 10;
+    setCountDown(30);
+    refCountDown.current = 30;
     setRecording(false);
   };
 

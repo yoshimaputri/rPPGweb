@@ -76,7 +76,7 @@ class Preprocessor implements PreprocessorInteface {
       if (!frame) {
         setTimeout(() => {
           this.process();
-        }, 10);
+        }, 30);
       } else {
         // const tpre = new Date();
         this.compute(this.previousFrame, frame);
