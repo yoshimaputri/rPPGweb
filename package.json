@@ -7,6 +7,7 @@
     "dev2": "next dev -H 164.125.19.25 -p 4001",
     "build": "next build",
     "start": "next start -p 8080",
+    "local": "next start -p 3000",
     "lint:eslint": "eslint . --ext .ts,.tsx",
     "lint:staged": "lint-staged"
   },
